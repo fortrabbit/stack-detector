@@ -552,6 +552,7 @@ class DetectorTest extends TestCase
             'Craft CMS unknown version' => ['craft_cms/unknown', null, StackType::CRAFT_CMS],
 
             'Statamic 4' => ['statamic/4', '4', StackType::STATAMIC],
+            'Statamic 6' => ['statamic/6', '6', StackType::STATAMIC],
             'Statamic unknown version' => ['statamic/unknown', null, StackType::STATAMIC],
 
             'Composer lock test' => ['symfony-in-composer-lock', '6.3.5', StackType::SYMFONY],
