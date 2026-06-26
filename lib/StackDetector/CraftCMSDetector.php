@@ -9,9 +9,11 @@ use fortrabbit\StackDetector\Enum\StackType;
 
 class CraftCMSDetector extends BaseComposerTypeDetector implements StackDetectorInterface
 {
+    public const string PACKAGE_NAME = 'craftcms/cms';
+
     protected function packagesToSearch(): array
     {
-        return ['craftcms/cms'];
+        return [self::PACKAGE_NAME];
     }
 
     protected function detectedStackType(): StackType

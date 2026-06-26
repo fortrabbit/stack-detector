@@ -549,6 +549,7 @@ class DetectorTest extends TestCase
 
             'Craft CMS 3' => ['craft_cms/3', '3.6', StackType::CRAFT_CMS],
             'Craft CMS 4' => ['craft_cms/4', '4.4', StackType::CRAFT_CMS],
+            'Craft CMS 6 (Laravel based)' => ['craft_cms/6', '6.0', StackType::CRAFT_CMS],
             'Craft CMS unknown version' => ['craft_cms/unknown', null, StackType::CRAFT_CMS],
 
             'Statamic 4' => ['statamic/4', '4', StackType::STATAMIC],
