@@ -1,0 +1,27 @@
+{
+  "name": "craftcms/craft",
+  "description": "Craft CMS",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "laravel",
+    "project"
+  ],
+  "license": "0BSD",
+  "homepage": "https://craftcms.com/",
+  "type": "project",
+  "require": {
+    "php": "^8.5",
+    "craftcms/cms": "^6.0.0",
+    "laravel/framework": "^13.8",
+    "laravel/tinker": "^3.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "craftcms/plugin-installer": true
+    },
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}

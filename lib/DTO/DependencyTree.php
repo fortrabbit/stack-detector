@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace fortrabbit\StackDetector\DTO;
 
+use fortrabbit\StackDetector\StackDetector\CraftCMSDetector;
 use fortrabbit\StackDetector\StackDetector\LunarDetector;
 use fortrabbit\StackDetector\StackDetector\OctoberCMSDetector;
 use fortrabbit\StackDetector\StackDetector\StatamicDetector;
@@ -19,6 +20,7 @@ class DependencyTree
             LunarDetector::PACKAGE_NAME,
             TwillDetector::PACKAGE_NAME,
             WinterCMSDetector::PACKAGE_NAME,
+            CraftCMSDetector::PACKAGE_NAME,
         ],
     ];
 
