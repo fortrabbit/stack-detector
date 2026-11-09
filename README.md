@@ -16,9 +16,11 @@ Supported Stacks for now:
 - Laravel
 - Leaf PHP
 - Lunar
+- Magento
 - October CMS
 - Shopware
 - Statamic
+- Sylius
 - Symfony
 - Tempest
 - Twill

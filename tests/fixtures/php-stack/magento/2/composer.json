@@ -1,0 +1,14 @@
+{
+    "name": "magento/project-community-edition",
+    "type": "project",
+    "license": ["OSL-3.0", "AFL-3.0"],
+    "require": {
+        "magento/product-community-edition": "2.4.8"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ]
+}

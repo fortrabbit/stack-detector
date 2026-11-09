@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace fortrabbit\StackDetector\StackDetector;
 
 use fortrabbit\StackDetector\Composer\PackageVersionProvider;
+use fortrabbit\StackDetector\DTO\DependencyTree;
 use fortrabbit\StackDetector\DTO\Stack;
 use fortrabbit\StackDetector\Enum\StackType;
 
@@ -37,5 +38,23 @@ abstract class BaseComposerTypeDetector
             $this->detectedStackType(),
             $version->getVersion(),
         );
+    }
+
+    /**
+     * True when software built on $parentPackage is installed, so the more specific detector wins.
+     */
+    protected function hasChildStack(string $baseUri, ?string $subDirectory, string $parentPackage): bool
+    {
+        foreach (DependencyTree::getChildStacksForPackage($parentPackage) as $packageName) {
+            if (null !== $this->packageVersionProvider->getVersionForPackage(
+                $baseUri,
+                $subDirectory,
+                [$packageName],
+            )) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

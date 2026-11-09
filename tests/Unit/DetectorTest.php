@@ -530,9 +530,15 @@ class DetectorTest extends TestCase
 
             'Lunar 1' => ['lunar/1', '1', StackType::LUNAR],
 
+            'Magento 2' => ['magento/2', '2.4.8', StackType::MAGENTO],
+
             'October CMS 4' => ['october_cms/4', '4', StackType::OCTOBER_CMS],
 
             'Shopware 6' => ['shopware/6', '6.7.0', StackType::SHOPWARE],
+            'Shopware 6 with Symfony in composer.lock' => ['shopware/6-locked', '6.7.3.1', StackType::SHOPWARE],
+
+            'Sylius 2' => ['sylius/2', '2.1', StackType::SYLIUS],
+            'Sylius 2 with Symfony in composer.lock' => ['sylius/2-locked', '2.1.6', StackType::SYLIUS],
 
             'Twill 3' => ['twill/3', '3', StackType::TWILL],
 

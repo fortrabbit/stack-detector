@@ -9,9 +9,11 @@ use fortrabbit\StackDetector\Enum\StackType;
 
 class ShopwareDetector extends BaseComposerTypeDetector implements StackDetectorInterface
 {
+    public const string PACKAGE_NAME = 'shopware/core';
+
     protected function packagesToSearch(): array
     {
-        return ['shopware/core'];
+        return [self::PACKAGE_NAME];
     }
 
     protected function detectedStackType(): StackType

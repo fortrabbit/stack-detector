@@ -1,0 +1,8 @@
+{
+    "content-hash": "0ff5bf63dfe00c079888b47286b794c9",
+    "packages": [
+        { "name": "shopware/core", "version": "v6.7.3.1", "type": "library" },
+        { "name": "symfony/framework-bundle", "version": "v7.3.4", "type": "symfony-bundle" }
+    ],
+    "packages-dev": []
+}
