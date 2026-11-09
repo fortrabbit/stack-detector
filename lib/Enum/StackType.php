@@ -16,9 +16,11 @@ enum StackType: string
     case LARAVEL = 'laravel';
     case LEAF_PHP = 'leaf';
     case LUNAR = 'lunar';
+    case MAGENTO = 'magento';
     case OCTOBER_CMS = 'october-cms';
     case SHOPWARE = 'shopware';
     case STATAMIC = 'statamic';
+    case SYLIUS = 'sylius';
     case SYMFONY = 'symfony';
     case TEMPEST = 'tempest';
     case TWILL = 'twill';

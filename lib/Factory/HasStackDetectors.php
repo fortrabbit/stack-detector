@@ -13,8 +13,10 @@ use fortrabbit\StackDetector\StackDetector\DrupalDetector;
 use fortrabbit\StackDetector\StackDetector\GravCMSDetector;
 use fortrabbit\StackDetector\StackDetector\LeafDetector;
 use fortrabbit\StackDetector\StackDetector\LunarDetector;
+use fortrabbit\StackDetector\StackDetector\MagentoDetector;
 use fortrabbit\StackDetector\StackDetector\OctoberCMSDetector;
 use fortrabbit\StackDetector\StackDetector\ShopwareDetector;
+use fortrabbit\StackDetector\StackDetector\SyliusDetector;
 use fortrabbit\StackDetector\StackDetector\TempestDetector;
 use fortrabbit\StackDetector\StackDetector\TwillDetector;
 use fortrabbit\StackDetector\StackDetector\Typo3Detector;
@@ -52,8 +54,10 @@ trait HasStackDetectors
             new GravCMSDetector($packageVersionProvider),
             new LeafDetector($packageVersionProvider),
             new LunarDetector($packageVersionProvider),
+            new MagentoDetector($packageVersionProvider),
             new OctoberCMSDetector($packageVersionProvider),
             new ShopwareDetector($packageVersionProvider),
+            new SyliusDetector($packageVersionProvider),
             new TempestDetector($packageVersionProvider),
             new TwillDetector($packageVersionProvider),
             new Typo3Detector($packageVersionProvider),

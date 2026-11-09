@@ -7,7 +7,9 @@ namespace fortrabbit\StackDetector\DTO;
 use fortrabbit\StackDetector\StackDetector\CraftCMSDetector;
 use fortrabbit\StackDetector\StackDetector\LunarDetector;
 use fortrabbit\StackDetector\StackDetector\OctoberCMSDetector;
+use fortrabbit\StackDetector\StackDetector\ShopwareDetector;
 use fortrabbit\StackDetector\StackDetector\StatamicDetector;
+use fortrabbit\StackDetector\StackDetector\SyliusDetector;
 use fortrabbit\StackDetector\StackDetector\TwillDetector;
 use fortrabbit\StackDetector\StackDetector\WinterCMSDetector;
 
@@ -21,6 +23,10 @@ class DependencyTree
             TwillDetector::PACKAGE_NAME,
             WinterCMSDetector::PACKAGE_NAME,
             CraftCMSDetector::PACKAGE_NAME,
+        ],
+        'symfony/framework-bundle' => [
+            ShopwareDetector::PACKAGE_NAME,
+            SyliusDetector::PACKAGE_NAME,
         ],
     ];
 
