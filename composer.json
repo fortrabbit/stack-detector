@@ -1,6 +1,12 @@
 {
     "name": "fortrabbit/stack-detector",
     "description": "A package to detect the PHP stack and node config of a project",
+    "homepage": "https://www.fortrabbit.com",
+    "support": {
+        "docs": "https://github.com/fortrabbit/stack-detector/blob/main/README.md",
+        "source": "https://github.com/fortrabbit/stack-detector",
+        "issues": "https://github.com/fortrabbit/stack-detector/issues"
+    },
     "type": "library",
     "license": "MIT",
     "autoload": {
