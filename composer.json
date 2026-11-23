@@ -33,7 +33,7 @@
         "php": "^8.4",
         "einenlum/composer-version-parser": "^1.0",
         "knplabs/github-api": "^3.12",
-        "symfony/http-client": "^7.0",
+        "symfony/http-client": "^7.0|^8.0",
         "nyholm/psr7": "^1.8"
     },
     "scripts": {
